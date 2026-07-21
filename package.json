@@ -1,0 +1,30 @@
+{
+  "name": "x-tools",
+  "version": "0.1.0",
+  "description": "Unofficial CLI and API for searching X (Twitter) using browser cookies. Keyword search, user search, thread fetch.",
+  "type": "module",
+  "bin": {
+    "x-tools": "./bin/cli.mjs"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "test": "glob 'tests/**/*.test.ts'",
+    "typecheck": "tsc --noEmit",
+    "lint": "prettier --check ."
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "playwright-core": "^1.49.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0",
+    "prettier": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

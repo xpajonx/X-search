@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.x-cookies.json
+.x-tools-browser-profile/
+.DS_Store
+.env
+*.log
