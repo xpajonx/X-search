@@ -12,10 +12,14 @@ export function threadCommand(): Command {
       if (opts.json) {
         console.log(JSON.stringify(result, null, 2));
       } else {
-        console.log(`Thread root: ${result.rootTweetId} (${result.totalReplies} replies)\n`);
+        console.log(
+          `Thread root: ${result.rootTweetId} (${result.totalReplies} replies)\n`,
+        );
         for (const tweet of result.tweets) {
           console.log(`[${tweet.authorHandle}] ${tweet.text}`);
-          console.log(`  https://x.com/${tweet.authorHandle}/status/${tweet.id}`);
+          console.log(
+            `  https://x.com/${tweet.authorHandle}/status/${tweet.id}`,
+          );
           console.log("");
         }
       }

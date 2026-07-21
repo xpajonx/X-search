@@ -1,3 +1,8 @@
+---
+name: x-search
+description: Search X (Twitter) using browser-cookie authentication. Keyword search, user search, thread fetch — replaces the xAI x_search tool with a local CLI.
+---
+
 # x-tools
 
 Search X (Twitter) using browser-cookie authentication. Replaces the xAI `x_search` server-side tool with a local, cookie-based implementation.
