@@ -32,10 +32,11 @@ Alternative_auth methods:
 
 ### Search posts
 ```
-x-tools search "AI news"                  # latest tweets (default)
-x-tools search "AI news" -t top           # top tweets
+x-tools search "AI news"                  # top tweets (default)
+x-tools search "AI news" -t latest        # latest tweets
 x-tools search "AI news" -n 50            # 50 results
 x-tools search "AI news" --json           # raw JSON output
+x-tools search "AI news" --report         # structured JSON for report generation
 ```
 
 ### Search users
@@ -70,6 +71,7 @@ Default (human-readable) output for search:
 ```
 
 `--json` emits the raw API response for programmatic use.
+`--report` outputs a structured JSON envelope (query, type, generatedAt, tweets with full metrics + links) for AI-powered report generation.
 
 ## Limitations
 
